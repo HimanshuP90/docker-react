@@ -4,7 +4,7 @@ services:
 
 # command to build
 before_install:
-    - docker build -t dockerid90/docker-react Dockerfile.dev .
+    - docker build -t dockerid90/docker-react -f Dockerfile.dev .
 
 # command to run test
 script:

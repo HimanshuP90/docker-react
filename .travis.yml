@@ -1,6 +1,6 @@
 sudo: required
 services:
-    - docker
+  - docker
 
 # command to build
 before_install:
@@ -8,4 +8,4 @@ before_install:
 
 # command to run test
 script:
-    - docker run dockerid90/docker-react  npm run test
+    - docker run dockerid90/docker-react npm run test -- --coverage
